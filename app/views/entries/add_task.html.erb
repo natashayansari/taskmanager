@@ -1,0 +1,16 @@
+<h1>Natasha's Tasks</h1>
+
+<%= form_tag :action => 'add_task' do %>
+<p>Enter your task:
+<%= text_field_tag 'task_name', @task, class: 'form-control' %>
+<%= submit_tag 'Add Task', class: 'btn btn-default btn-md' %></p>
+
+<% end %>
+<p>Previous Tasks:</p>
+<ul>
+<% @mytasks.each do |e| %>
+	<li class="list-group-item"><%= e.task %></li>
+<% end %>
+
+</ul>
+

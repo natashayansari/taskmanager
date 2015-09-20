@@ -1,0 +1,17 @@
+ p {
+  margin: 30px 0 10px;
+}
+
+h1 {
+font-family: monospace;
+}
+
+.btn {
+	vertical-align: top;
+}
+
+.list-group-item {
+	width: 50%;
+	border: 1px solid firebrick;
+	margin-left: 65px;
+}
